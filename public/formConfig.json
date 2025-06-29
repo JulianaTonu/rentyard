@@ -1,0 +1,245 @@
+{
+    "propertyAddress": {
+        "title": "Property address",
+        "fields": [
+            {
+                "label": "Property name as identifier",
+                "name": "propertyName",
+                "type": "text",
+                "required": true
+            },
+            {
+                "label": "Total apartment unit",
+                "name": "totalUnits",
+                "type": "number",
+                "required": true
+            },
+            {
+                "label": "Property website",
+                "name": "propertyWebsite",
+                "type": "url",
+                "required": false
+            },
+            {
+                "label": "Country/Region",
+                "name": "country",
+                "type": "select",
+                "options": [
+                    "United States",
+                    "Bangladesh"
+                ],
+                "required": true
+            },
+            {
+                "label": "Street address",
+                "name": "streetAddress",
+                "type": "text",
+                "required": true
+            },
+            {
+                "label": "Apt, suite, unit",
+                "name": "aptUnit",
+                "type": "text",
+                "required": false
+            },
+            {
+                "label": "City/Town",
+                "name": "city",
+                "type": "text",
+                "required": true
+            },
+            {
+                "label": "State/Territory",
+                "name": "state",
+                "type": "select",
+                "options": [
+                    "Texas",
+                    "California",
+                    "New York"
+                ],
+                "required": true
+            },
+            {
+                "label": "Zip code",
+                "name": "zip",
+                "type": "text",
+                "required": true
+            }
+        ]
+    },
+    "leasingInfo": {
+        "title": "Leasing info",
+        "fields": [
+            {
+                "label": "Leasing manager name",
+                "name": "leaseDuration",
+                "type": "number",
+                "required": true
+            },
+            {
+                "label": "Leasing manager Phone number",
+                "name": "depositAmount",
+                "type": "number",
+                "required": true
+            },
+            {
+                "label": "Leasing manager email",
+                "name": "leaseStart",
+                "type": "email",
+                "required": true
+            },
+            {
+                "label": "Address(same as property",
+                "name": "sendReminder",
+                "type": "checkbox",
+                "required": false
+            }
+        ]
+    },
+    "charges": {
+        "title": "Charges",
+        "fields": [
+            {
+                "label": "Application fee (one-time)",
+                "name": "monthlyRent",
+                "type": "number",
+                "required": true
+            },
+            {
+                "label": "Admin fee(One-time)",
+                "name": "maintenanceFee",
+                "type": "number",
+                "required": false
+            }
+        ]
+    },
+    "rentFrequency": {
+        "title": "Rent frequency & payment reminder",
+        "fields": [
+            {
+                "label": "Rent Payment frequency",
+                "name": "paymentFrequency",
+                "type": "select",
+                "options": [
+                    "Monthly",
+                    "Weekly",
+                    "Bi-weekly"
+                ],
+                "required": true
+            },
+            {
+                "label": "Rent reminder/Statement date",
+                "name": "sendReminder",
+                "type": "date",
+                "required": true
+            },
+            {
+                "label": "Rent due date",
+                "name": "dueDate",
+                "type": "date",
+                "required": true
+            }
+        ]
+    },
+    "applicationAgreement": {
+        "title": "Application agreement",
+        "fields": [
+            {
+                "label": "Upload agreement PDF",
+                "name": "agreementDoc",
+                "type": "file",
+                "accept": ".pdf",
+                "required": true
+            }
+        ]
+    },
+    "aboutProperty": {
+        "title": "About the property",
+        "fields": [
+            {
+                "label": "",
+                "name": "description",
+                "type": "textarea",
+                "required": false
+            }
+        ]
+    },
+    "communityAmenity": {
+        "title": "Community's amenity/features",
+        "fields": [
+            {
+                "label": "Amenities",
+                "name": "amenities",
+                "type": "search",
+                "options": [
+                    "Gym",
+                    "Swimming Pool",
+                    "Laundry",
+                    "Security"
+                ],
+                "required": true
+            }
+        ]
+    },
+    "petFees": {
+        "title": "Pet fees",
+        "fields": [
+            {
+                "label": "Pet Types",
+                "name": "petsAllowed",
+                "type": "select",
+                "options": [
+                    "Dog",
+                    "Cat"
+                ],
+                "required": true
+            },
+            {
+                "label": "Max weigth(LB)",
+                "name": "petDeposit",
+                "type": "number",
+                "required": true
+            },
+            {
+                "label": "One time pet fee",
+                "name": "petDeposit",
+                "type": "number",
+                "required": true
+            },
+            {
+                "label": "Pet Security Deposit",
+                "name": "petDeposit",
+                "type": "number",
+                "required": true
+            },
+            {
+                "label": "Monthly pet rent",
+                "name": "petDeposit",
+                "type": "number",
+                "required": true
+            }
+        ]
+    },
+    "parking": {
+        "title": "Parking",
+        "fields": [
+            {
+                "label": "Guest vehicle Parking ",
+                "name": "parkingType",
+                "type": "select",
+                "options": [
+                    "Garage",
+                    "Street",
+                    "Lot"
+                ],
+                "required": true
+            },
+            {
+                "label": "Parking spaces available",
+                "name": "parkingSpaces",
+                "type": "textarea",
+                "required": false
+            }
+        ]
+    }
+}
