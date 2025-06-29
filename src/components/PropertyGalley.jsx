@@ -46,7 +46,7 @@ const PropertyGallery = () => {
     updated[index] = fileList;
     setter(updated);
   };
-
+console.log(updatePhoto,coverPhoto)
   return (
     <div className="border border-gray-200 rounded-lg p-4 bg-white space-y-4">
          <p className="text-md font-semibold border-b border-gray-200 pb-2">
