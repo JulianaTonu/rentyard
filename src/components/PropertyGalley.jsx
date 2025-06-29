@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import pdf from "../assets/pdf.png"
+import VideoSection from './VideoSection';
 const UploadBox = ({ onChange, size = 'small' }) => {
   const [preview, setPreview] = useState(null);
 
@@ -98,13 +99,8 @@ const PropertyGallery = () => {
        </div>
       </div>
 
-      {/* Videos (optional) */}
-      <details className="mt-4 border border-gray-100 rounded-full p-4">
-        <summary className="cursor-pointer text-sm font-medium text-gray-700">Videos (optional)</summary>
-        <div className="mt-2 text-sm text-gray-500">
-          You can upload promotional or walkthrough videos here.
-        </div>
-      </details>
+      {/* Videos (optional) Section*/}
+      <VideoSection/>
     </div>
   );
 };
