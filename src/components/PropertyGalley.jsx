@@ -55,7 +55,7 @@ const PropertyGallery = () => {
          <p className="text-sm font-semibold">
         Featured photos <span className="text-gray-500"></span> <span className="text-red-500">*</span>
       </p>
-     <p className="text-sm font-semibold text-gray-600 ">
+     <p className="text-sm font-semibold text-gray-600 ml-52">
           More photos <span className="text-gray-400">(optional)</span>
         </p>
      </div>
@@ -82,8 +82,6 @@ const PropertyGallery = () => {
  
         {/* More Photos */}
        <div>
-
-        
          <div className="grid grid-cols-4 gap-2 pl-4">
           {morePhotos.map((_, i) => (
             <UploadBox
