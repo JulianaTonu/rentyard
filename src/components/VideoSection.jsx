@@ -32,7 +32,7 @@ const VideoUploadBox = ({ label }) => {
 
 const VideoSection = () => {
   return (
-    <details open className="border border-gray-200 rounded-lg p-4 bg-white mt-6">
+    <details open className="border border-gray-200 rounded-lg p-4 bg-white mt-6 mb-10">
       <summary className="cursor-pointer text-sm font-medium text-gray-800">
         Videos <span className="text-gray-400">(optional)</span>
       </summary>

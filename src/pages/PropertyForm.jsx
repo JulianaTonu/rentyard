@@ -68,9 +68,9 @@ export default function PropertyForm() {
                             className="flex items-center gap-4 cursor-pointer p-4 border rounded-lg hover:border-blue-500 border-gray-300"
                         >
                             <img className="w-6 h-6" src={type.img} alt={type.label} />
-                            <div>
-                                <p className="font-medium">{type.label}</p>
-                                <p className="text-sm text-gray-400">{type.description}</p>
+                            <div className="ml-3">
+                                <p className="font-medium text-lg">{type.label}</p>
+                                <p className="text-sm text-gray-400 mt-1.5">{type.description}</p>
                             </div>
                         </div>
                     ))}
@@ -90,9 +90,9 @@ export default function PropertyForm() {
                                 }`}
                         >
                             <img className="w-6 h-6 mt-1" src={r.img} alt="" />
-                            <div>
-                                <p className="font-medium">{r.label}</p>
-                                <p className="text-sm text-gray-500">{r.description}</p>
+                            <div className="ml-4">
+                                <p className="font-medium text-lg">{r.label}</p>
+                                <p className="text-sm text-gray-400 mt-1.5">{r.description}</p>
                             </div>
                         </div>
                     ))}

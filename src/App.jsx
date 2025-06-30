@@ -13,7 +13,7 @@ const App = () => {
         <Routes>
           <Route path="/" element={<PropertyForm />} />
           <Route path="/add-property/:type" element={<PropertyDetail />} />
-          <Route path="/p" element={<ExpendableProfileInfo />} />
+          <Route path="/profile" element={<ExpendableProfileInfo />} />
         </Routes>
       </div>
     </Router>
