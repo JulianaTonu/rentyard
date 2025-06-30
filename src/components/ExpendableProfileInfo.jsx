@@ -96,11 +96,12 @@ const ExpendableProfileInfo = () => {
             </div>
 
             {/* Fixed Footer */}
-            <div className="fixed w-[1280px] mt-7  bg-white px-6 py-4 flex justify-between items-center border-t border-gray-200 z-50">
+            <div className=" w-full mt-7  bg-white px-6 py-4 flex justify-between items-center border-t border-gray-200 z-50">
                 <button onClick={() => navigate('/')}
                     className="cursor-pointer px-6 py-2  hover:bg-blue-600 hover:text-white transition text-black border border-[#E0E0E0] rounded-lg font-medium">
                     Exit
-                </button>                <div className="flex items-center gap-6">
+                </button> 
+                    <div className="flex items-center gap-6">
                     <p className="text-md text-gray-800">Total with card charge: <span className="font-semibold">${totalCharge}</span></p>
                     <button className="bg-blue-600 text-white px-4 py-2 rounded-md">Pay & add property</button>
                 </div>

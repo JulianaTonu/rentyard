@@ -124,6 +124,7 @@ const PropertyGallery = () => {
           Get Started
         </button>
       </div>
+      
    </>
   );
 };

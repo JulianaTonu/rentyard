@@ -470,22 +470,23 @@ export default function PropertyForm() {
 
 
 
-            {/* button section  */}
-            <div className="fixed bottom-0 left-0 w-full bg-white px-14 p-4 flex justify-between mx-auto">
-                <button
-                    type="button"
-                    onClick={() => alert("Back clicked")}
-                    className="text-blue-500 font-semibold"
-                >
-                    Back
-                </button>
-                <button
-                    type="submit"
-                    className="bg-blue-600 text-white py-2 px-4 rounded-md"
-                >
-                    Get Started
-                </button>
-            </div>
+           {/* footer Buttons */}
+      <div className=" mt-65  items-center  w-[1280px] bg-white px-10 p-4 flex justify-between mx-auto ">
+        <button
+          type="button"
+          onClick={() => navigate(`/`)}
+          className="text-blue-500 font-semibold cursor-pointer hover:border hover:bg-gray-50  px-3 py-2 rounded-md"
+        >
+          Back
+        </button>
+        <button
+          type="submit"
+          onClick={() => navigate(`/profile`)}
+          className="bg-blue-600 hover:bg-blue-700 text-white py-2 px-4 rounded-md cursor-pointer"
+        >
+          Get Started
+        </button>
+      </div>
         </form>
     );
 }
