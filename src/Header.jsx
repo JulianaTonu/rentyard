@@ -4,7 +4,7 @@ const Header = () => {
         const [open, setOpen] =useState(false)
 
     return (
-        <nav className="flex items-center justify-between px-6 md:px-16 lg:px-24 xl:px-32 py-4 border-b border-gray-300 bg-white relative transition-all">
+        <nav className="flex w-[1440px] items-center justify-between mx-auto  xl:px-32 py-4 border-b border-gray-100 bg-white relative transition-all">
 
             <a href="/">
                 <img className="h-9" src={logo} alt="Logo" />
@@ -12,11 +12,7 @@ const Header = () => {
 
             {/* Desktop Menu */}
             <div className="hidden sm:flex items-center gap-8">
-               
-
-               
-
-                
+ 
 
                 <button className="cursor-pointer px-6 py-2  hover:bg-blue-600 hover:text-white transition text-black border border-[#E0E0E0] rounded-lg font-medium">
                     Exit
