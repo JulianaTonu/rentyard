@@ -58,6 +58,7 @@ const PropertyGallery = () => {
   };
   console.log(coverPhoto)
   return (
+   <>
     <div className="border border-gray-200 rounded-lg p-4 bg-white space-y-4">
       <p className="text-md font-semibold border-b border-gray-200 pb-2">
         Property gallery <span className="text-gray-500">(It's not unit photo)</span> <span className="text-red-500">*</span>
@@ -104,8 +105,10 @@ const PropertyGallery = () => {
       {/* Videos Section */}
       <VideoSection />
 
-      {/* footer Buttons */}
-      <div className="fixed bottom-0  w-[1280px] bg-white px-10 p-4 flex justify-between mx-auto ">
+     
+    </div>
+     {/* footer Buttons */}
+      <div className="  items-center  w-[1280px] bg-white px-10 p-4 flex justify-between mx-auto ">
         <button
           type="button"
           onClick={() => navigate(`/`)}
@@ -121,7 +124,7 @@ const PropertyGallery = () => {
           Get Started
         </button>
       </div>
-    </div>
+   </>
   );
 };
 

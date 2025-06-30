@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import creditCard from '../assets/credit-card.png'
 import creditCard2 from '../assets/creditCard.png'
+import { useNavigate } from 'react-router-dom';
 
 const plans = [
     { name: 'Regular', price: 99.99, unit: '1-50 unit', autoPay: true },
@@ -15,7 +16,7 @@ const cards = [
 ];
 
 const ExpendableProfileInfo = () => {
-
+    const navigate = useNavigate();
     const [selectedPlan, setSelectedPlan] = useState('Regular');
     const [selectedCard, setSelectedCard] = useState(0);
 
@@ -96,7 +97,8 @@ const ExpendableProfileInfo = () => {
 
             {/* Fixed Footer */}
             <div className="fixed w-[1280px] mt-7  bg-white px-6 py-4 flex justify-between items-center border-t border-gray-200 z-50">
-                <button className="cursor-pointer px-6 py-2  hover:bg-blue-600 hover:text-white transition text-black border border-[#E0E0E0] rounded-lg font-medium">
+                <button onClick={() => navigate('/')}
+                    className="cursor-pointer px-6 py-2  hover:bg-blue-600 hover:text-white transition text-black border border-[#E0E0E0] rounded-lg font-medium">
                     Exit
                 </button>                <div className="flex items-center gap-6">
                     <p className="text-md text-gray-800">Total with card charge: <span className="font-semibold">${totalCharge}</span></p>
@@ -186,7 +188,7 @@ const ExpendableProfileInfo = () => {
 
 
                         <div className="flex justify-end gap-3 mx-4">
-                           
+
                             <button
                                 className="bg-blue-600 text-white px-4 py-2 rounded-lg"
                                 onClick={() => {

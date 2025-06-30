@@ -28,7 +28,7 @@ const mockPreviewData = {
   leasingInfo: "Leased for 1 year starting July 2025",
   charges: "Utility and maintenance charges apply",
   rentFrequency: "Monthly rent, reminders sent on 25th",
-  applicationAgreement: "Must agree to terms before applying",
+  applicationAgreement: "Accept immigrant & international student application",
   aboutProperty: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
 };
 
@@ -97,9 +97,15 @@ const PropertyDetail = () => {
                     ))}
                   </div>
                 ) : (
-                  <p className="text-sm bg-gray-50 rounded-md px-4 py-2 mt-2">
+                  <div className='flex justify-between items-center p-4'>
+                  <p className="text-sm text-gray-700 bg-gray-50 rounded-md mr-14 py-2 mt-2 w-96">
                     {mockPreviewData[section.key]}
                   </p>
+                  <div className='flex h-5 gap-2 cursor-pointer'>
+                    <img onClick={() => setModalOpen(section.key)} src={edit} alt="edit" />
+                    <img src={bin} alt="delete" />
+                  </div>
+                </div>
                 )
               )}
             </div>

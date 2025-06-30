@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import toast from 'react-hot-toast';
 
 const DynamicModalForm = ({ sectionKey, onClose }) => {
   const [formConfig, setFormConfig] = useState(null);
@@ -20,6 +21,8 @@ const DynamicModalForm = ({ sectionKey, onClose }) => {
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log('Submitted:', formData);
+      toast.success("Successfully Added!");
+
     onClose();
   };
 
